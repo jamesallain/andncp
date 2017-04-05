@@ -1,0 +1,11 @@
+module.exports = function (obj) {
+obj || (obj = {});
+var __t, __p = '';
+with (obj) {
+__p += '<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="UTF-8">\n  <title>\n    ' +
+((__t = ( htmlWebpackPlugin.options.title )) == null ? '' : __t) +
+'\n  </title>\n\n  <meta name = \'viewport\' content = \'width=device-width, initial-scale=1\'>\n\n  <link rel="stylesheet" href="/styles.css">\n<link href="/styles.css" rel="stylesheet"></head>\n<body>\n\n  <div id = \'viewer\'>\n    viewer\n  </div>\n\n  <script src = \'/vendor.bundle.js\'></script>\n  <script src = \'/bundle.js\'></script>\n<script type="text/javascript" src="/vendor.bundle.js"></script><script type="text/javascript" src="/bundle.js"></script></body>\n</html>\n';
+
+}
+return __p
+}

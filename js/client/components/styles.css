@@ -1,0 +1,203 @@
+
+:local(.Viewer) {
+  padding-top: 60px;
+
+  .Footer {
+    background-color: #f9f9f9;
+
+    .card-block {
+      padding: 0.5rem;
+    }
+  }
+
+  .Profile {
+
+    .Edges {
+
+      .Node {
+        cursor: pointer;
+
+        .Jumbotron {
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+          border-top: none;
+          border-right: none;
+          border-left: none;
+        }
+      },
+
+      .Node:last-child {
+
+        .Jumbotron {
+          border-bottom: none;
+        }
+      },
+
+      .Loading {
+        border: none;
+      }
+    },
+
+    .Detail {
+
+      .Jumbotron {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        .ProfilePicture {
+          position: relative;
+
+          .Display {
+            max-width: 15rem;
+            max-height: 20rem;
+          },
+
+          .Controls {
+            position: relative;
+            top: 0px;
+            left: 130px;
+
+            .Update {
+
+              input[type='file'] {
+                display: none;
+              }
+            }
+          }
+        },
+
+        .Text {
+          position: relative;
+
+          .Controls {
+            position: absolute;
+            right: -30px;
+            top: 0;
+          }
+        }
+      },
+
+      .Education {
+        position: relative;
+
+        .Item {
+          position: relative;
+
+          .Controls {
+            position: absolute;
+            top: 10px;
+            right: -15px;
+            z-index: 1000;
+          }
+
+          .card {
+            border-top: none;
+            border-right: none;
+            border-left: none;
+          }
+        },
+
+        .Item.lastChild {
+
+          .card {
+            border: none;
+          }
+        },
+
+        .Controls {
+          position: absolute;
+          top: -11px;
+          right: 0;
+        },
+
+        .Create {
+
+          .card {
+            border: none;
+          }
+        }
+      },
+
+      .Experience {
+        position: relative;
+
+        .Item {
+          position: relative;
+
+          .Controls {
+            position: absolute;
+            top: 10px;
+            right: -15px;
+            z-index: 1000;
+
+            .Update, .Delete {
+              cursor: pointer;
+            }
+          },
+
+          .card {
+            border-top: none;
+            border-right: none;
+            border-left: none;
+          }
+        },
+
+        .Item.lastChild {
+
+          .card {
+            border: none;
+          }
+        }
+
+        .Controls {
+          position: absolute;
+          top: -15px;
+          right: 0;
+        },
+
+        .Create {
+
+          .card {
+            border: none;
+          }
+        }
+      },
+
+      .Skill {
+        position: relative;
+
+        .Item {
+          position: relative;
+
+          .card {
+            border-top: none;
+            border-right: none;
+            border-left: none;
+          },
+
+          .Controls {
+            position: absolute;
+            top: 10px;
+            right: -15px;
+            z-index: 1000;
+          }
+        },
+
+        .Item.lastChild {
+
+          .card {
+            border-bottom: none;
+          }
+
+        },
+
+        .Controls {
+          position: absolute;
+          top: -10px;
+          right: -15px;
+          z-index: 1000;
+        }
+      }
+    }
+  }
+}

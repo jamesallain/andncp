@@ -1,0 +1,26 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        "es2015",
+        "stage-0",
+        "react"
+      ],
+      "plugins": [
+        [
+          "transform-builtin-extend",
+          {
+            globals: ["Object"]
+          }
+        ],
+        [
+          "transform-runtime",
+          {
+            polyfill: false,
+            regenerator: true
+          }
+        ]
+      ]
+    }
+  }
+}
